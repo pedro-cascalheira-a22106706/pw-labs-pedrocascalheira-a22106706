@@ -20,12 +20,59 @@
                 <b><a href="local.html">Localização</a></b>
                 <b><a href="info.html">Informação</a></b>
                 <b><a href="multimedia.html">Multimedia</a></b>
+                <b><a href="quizz.html">Quizz</a></b>
             </p>
         </nav>
         <main>
             <section>
                 <h3>Quizz</h3>
                 <p>Nesta página será feito um quizz para testar se conhece bem a cidade de Paris</p>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Quizz sobre Paris</legend>
+                    <label><span>*</span> Nome:</label>
+                    <input type="text" name="name" placeholder="Insira o seu nome" required/>
+                    <br>
+                    <label>Idade:</label>
+                    <input type="number" name="age" min="15" max="100" />
+                    <br>
+                    <section>
+                        <label><span>*</span> Género:</label>
+                        <input required type="radio" name="gender" value="masculino" /> Masculino
+                        <input required type="radio" name="gender" value="feminino" /> Femimino
+                        <input required type="radio" name="gender" value="outros"/> Outro
+                        <br>
+                    </section>
+                    <section>
+                        <label for="checkbox">Gostaria de visitar Paris?</label>
+                        <input type="checkbox" name="checkbox">
+                        <br>
+                        <label>Quanto acha que sabe da cidade de 1 a 10:</label>
+                        <input type="number" min="1" max="10">
+                        <br>
+                        <label>Que data é hoje?</label>
+                        <input type="date" required>
+                    </section>
+                    <br>
+                    As perguntas abaixo serão do tipo verdadeiro e falso, e multipla seleção.
+                    <br>
+                    <br>
+                    <section name="comentário">
+                        <label for="comentario">Faça um pequeno comentário sobre o que acha da cidade.</label>
+                        <br>
+                        <input type="textarea" id="comentario" maxlength="200" size=50>
+                    </section>
+                    <section>
+                        <label>Como avalia este Quizz?</label>
+                        <br>
+                        <section>
+                            Péssimo
+                            <input type="range">
+                            Excelente
+                        </section>
+                    </section>
+                </fieldset>
             </section>
         </main>
     </body>
