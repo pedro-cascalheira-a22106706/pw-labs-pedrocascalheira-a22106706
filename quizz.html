@@ -2,6 +2,7 @@
 <html lang = "pt">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
         <title>Paris</title>
         <meta name="author" content="Pedro Cascalheira">
         <meta name="description" content="Website sobre Paris">
@@ -31,47 +32,53 @@
             <section>
                 <fieldset>
                     <legend>Quizz sobre Paris</legend>
-                    <label><span>*</span> Nome:</label>
-                    <input type="text" name="name" placeholder="Insira o seu nome" required/>
-                    <br>
-                    <label>Idade:</label>
-                    <input type="number" name="age" min="15" max="100" />
-                    <br>
-                    <section>
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <label for="a">* Nome:</label>
+                        <input type="text" id= "a"name="name" placeholder="Insira o seu nome" required/>
+                        <br>
+                        <label>Idade:</label>
+                        <input type="number" name="age" min="15" max="100" />
+                        <br>
+                        <section>
                         <label><span>*</span> Género:</label>
                         <input required type="radio" name="gender" value="masculino" /> Masculino
                         <input required type="radio" name="gender" value="feminino" /> Femimino
                         <input required type="radio" name="gender" value="outros"/> Outro
                         <br>
                     </section>
-                    <section>
-                        <label for="checkbox">Gostaria de visitar Paris?</label>
-                        <input type="checkbox" name="checkbox">
-                        <br>
-                        <label>Quanto acha que sabe da cidade de 1 a 10:</label>
-                        <input type="number" min="1" max="10">
-                        <br>
-                        <label>Que data é hoje?</label>
-                        <input type="date" required>
-                    </section>
-                    <br>
-                    As perguntas abaixo serão do tipo verdadeiro e falso, e multipla seleção.
-                    <br>
-                    <br>
-                    <section name="comentário">
-                        <label for="comentario">Faça um pequeno comentário sobre o que acha da cidade.</label>
-                        <br>
-                        <input type="textarea" id="comentario" maxlength="200" size=50>
-                    </section>
-                    <section>
-                        <label>Como avalia este Quizz?</label>
-                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Perguntas</legend>
                         <section>
-                            Péssimo
-                            <input type="range">
-                            Excelente
+                            <label for="checkbox">Gostaria de visitar Paris?</label>
+                            <input type="checkbox" name="checkbox">
+                            <br>
+                            <label>Quanto acha que sabe da cidade de 1 a 10:</label>
+                            <input type="number" min="1" max="10">
+                            <br>
+                            <label>Que data é hoje?</label>
+                            <input type="date" required>
                         </section>
-                    </section>
+                        <br>
+                        <fieldset>
+                            <legend>As perguntas abaixo serão do tipo verdadeiro e falso, e multipla seleção.</legend>
+                            <section name="comentário">
+                                <label for="comentario">Faça um pequeno comentário sobre o que acha da cidade.</label>
+                                <br>
+                                <input type="textarea" id="comentario" maxlength="200" size=50>
+                            </section>
+                            <section>
+                                <label>?</label>
+                                <br>
+                                <section>
+                                    😢
+                                    <input type="range">
+                                    😁
+                                </section>
+                            </section>
+                        </fieldset>     
+                    </fieldset>
                 </fieldset>
             </section>
         </main>
