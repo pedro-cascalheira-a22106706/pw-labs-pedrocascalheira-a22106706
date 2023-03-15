@@ -16,7 +16,7 @@ body{
 }
 /**/
 /*header*/
-.header{
+header{
     width: 100%;
     margin: auto;
     padding: 35 0;
@@ -26,14 +26,14 @@ body{
     grid-area: header;
     color: #fff;
 }
-.header ul li{
+header ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.header ul li::after{
+header ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -44,11 +44,11 @@ body{
     transition: 0.5s;
 }
 
-.header ul li:hover::after{
+header ul li:hover::after{
     width: 100%;
 }
 
-.header ul li a{
+header ul li a{
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
@@ -56,7 +56,7 @@ body{
 /**/
 
 /*main*/
-.main{
+main{
     color: #fff;
     margin: auto;
     
@@ -64,19 +64,19 @@ body{
     
 }
 
-.main ol li{
+main ol li{
     list-style: none;
     margin: 0 20px;
     position: relative;
 }
 
-.main a {
+main a {
     text-decoration: none;
     color: inherit;
     position: relative;
 }
 
-.main a::after{
+main a::after{
     content: '';
     height: 3px;
     width: 0;
@@ -88,13 +88,13 @@ body{
     transition: 0.5s;
 }
 
-.main ol li a:hover::after{
+main ol li a:hover::after{
     width: 100%;
 }
 /**/
 
 /*footer*/
-.footer{
+footer{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -103,7 +103,7 @@ body{
     background: rgba(50, 50, 156, 0.8);
 }
 
-.footer p{
+footer p{
     text-align: right;
 }
 /**/
