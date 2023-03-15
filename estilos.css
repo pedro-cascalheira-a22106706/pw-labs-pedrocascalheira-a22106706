@@ -1,24 +1,23 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;             
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
 }
 /*body*/
 body{
-    width: 100%;
-    height: 100vh;
     background-image: url(images/paris2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 /**/
 /*header*/
 .header{
-    border: 1px solid red;
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 35 0;
     display: flex;
@@ -51,23 +50,18 @@ body{
 
 .header ul li a{
     text-decoration: none;
-    color: #fff;
+    color: inherit;
     text-transform: uppercase;
 }
 /**/
 
 /*main*/
 .main{
-    border: 1px solid red;
-    grid-area: main;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    transform: translateY(50%);
+    color: #fff;
+    margin: auto;
+    
     text-align: center;
-    color: #ffffff;
-    padding: 10px;
-    margin: 10px 0;
+    
 }
 
 .main ol li{
@@ -103,21 +97,18 @@ body{
 .footer{
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100vw; 
-    grid-area: footer;
-    height: 50px;
+    width: 100%;
+    margin: auto;
     color: #fff;
     background: rgba(50, 50, 156, 0.8);
 }
 
 .footer p{
     text-align: right;
-    transform: translateY(50%);
 }
 /**/
+
+
 
 
 
