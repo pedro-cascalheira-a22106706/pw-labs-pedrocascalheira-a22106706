@@ -1,5 +1,8 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;           
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;          
 }
 
 body {
@@ -114,4 +117,29 @@ footer{
 footer > p{
     text-align: right;
 }
+/**/
+
+/*flex*/
+.flex-container{
+    border: 5px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(138, 43, 226, 0.5);
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex > p{
+    font-size: 5rem;
+}
+
 /**/
