@@ -61,7 +61,6 @@ main{
     margin: auto;
     height: 100%;
     text-align: center;
-    
 }
 .text-background{
     background: linear-gradient(to bottom left,rgba(0, 0, 255, 0.4), rgb(255, 165, 0, 0.4));
@@ -121,12 +120,11 @@ footer > p{
 
 /*flex*/
 .flex-container{
-    border: 5px solid black;
-    width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000;
 }
 .flex{
     width: 50vw;
